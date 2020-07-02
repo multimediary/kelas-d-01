@@ -160,11 +160,17 @@ main article h3{
     margin-bottom: 50px;
 }
 
-.profile-info p span {
+.profile-info p #ceb {
+    font-weight: 700;
+    color: #eee;
+    margin-top: 5px;
+}
+
+.profile-info p #jokes {
     font-family: 'Montserrat',sans-serif;
     text-align: right;
     font-style: italic;
-    color: #4CB493
+    color: #4CB493;
 }
 				
 .profile-info span {
