@@ -1,7 +1,7 @@
 /* MEDIA QUERY NAVIGASI & HEADER */
 @media only screen and (max-width: 870px){
     nav ul{
-        display: none;
+        display: none !important;
     }
     .menu-icon{
         display: block;
