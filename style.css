@@ -410,9 +410,7 @@ i.fa {
 /* footer */
 footer {
     background-color: white;
-}
-footer .container{
-    margin:20px;
+    padding-top: 25px;
 }
 .footer-main h3{
     text-align: center;
