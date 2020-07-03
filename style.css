@@ -281,7 +281,7 @@ i.fa {
 footer {
     background-color: white;
 }
-footer container{
+footer .container{
     margin:20px;
 }
 .footer-main h3{
