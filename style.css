@@ -80,7 +80,22 @@ main article p{
 
 main article h3{
     font-size: 28px;
-
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+main article img{
+    border: 3px solid #4CB493;
+}
+.img-pembahasan{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text-pembahasan{
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 24px;
 }
 
 .menu-icon {
@@ -90,6 +105,12 @@ main article h3{
     padding: 21px 0;
     display: none;
     
+}
+hr {
+    background: rgba(0,0,0,0.3);
+    border: 0;
+    height: 1px;
+    margin: 22px 0;
 }
 
 /* STYLE MAIN TAMBAHAN */
