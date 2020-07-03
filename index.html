@@ -3,25 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
   <!-- Font Awesome Icon -->
   <script src="https://kit.fontawesome.com/0c7862c63f.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <title>COVID-19 | Project D01</title>
 </head>
 <body>
   <!-- AWAL HEADER -->
   <header>
-    <h1>COVID-19</h1>
-    <ion-icon class="fas fa-bars menu-icon" name="apps-outline"></ion-icon>
+    <!-- Navigasi -->
     <nav>
+      <div class="nav-logo">
+        <a href="#welcome">
+          <img class="nav-img" src="./img/virus1.svg" alt="logo">
+          <h3 class="nav-title">COVID-19</h3>
+        </a>
+      </div>
       <ul>
         <li><a href="#pembahasan">Pembahasan</a></li>
-        <li><a href="#Tingkat Kematian">Tingkat Kematian</a></li>
-        <li>Daerah Terkonfirmasi</li>
+        <li><a href="#tingkat-kematian">Tingkat Kematian</a></li>
         <li><a href="#tentang-kami">Tentang Kami</a></li>
       </ul>
+      <div class="fa fa-bars menu-icon" name="apps-outline"></div>
     </nav>
+    <!-- Welcome Screen -->
+    <section class="welcome" id="welcome">
+			<div class="video-container">
+				<video src="./vid/covid19.mp4" autoplay muted loop></video>
+			</div>
+			<div class="content">
+				<h1>Corona Virus Disease 2019</h1>
+				<h3>A Website Project by Team D01</h3>
+				<a href="#pembahasan" class="btn">READ MORE</a>
+			</div>
+		</section>
   </header>
   <!-- AKHIR HEADER -->
 
@@ -29,7 +46,7 @@
   <main class="content">
     <!-- MAIN UTAMA -->
     <article class="col-6 col-s-9">
-      <h3 id="pembahasan">Pembahasan</h3>
+      <h3><span class="nav-anchor" id="pembahasan"></span> Pembahasan</h3>
       <img src="img/corona.jpg" alt="Foto">
       <p>
         Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) yang lebih dikenal dengan nama virus Corona adalah jenis baru dari coronavirus yang menular ke manusia. Virus ini bisa menyerang siapa saja, seperti lansia (golongan usia lanjut), orang dewasa, anak-anak, dan bayi, termasuk ibu hamil dan ibu menyusui. Infeksi virus Corona disebut COVID-19 (Corona Virus Disease 2019) dan pertama kali ditemukan di kota Wuhan, China pada akhir Desember 2019. Virus ini menular dengan sangat cepat dan telah menyebar ke hampir semua negara, termasuk Indonesia, hanya dalam waktu beberapa bulan.
@@ -40,7 +57,7 @@
           
         Selain virus SARS-CoV-2 atau virus Corona, virus yang juga termasuk dalam kelompok ini adalah virus penyebab Severe Acute Respiratory Syndrome (SARS) dan virus penyebab Middle-East Respiratory Syndrome (MERS). Meski disebabkan oleh virus dari kelompok yang sama, yaitu coronavirus, COVID-19 memiliki beberapa perbedaan dengan SARS dan MERS, antara lain dalam hal kecepatan penyebaran dan keparahan gejala.
       </p>
-      <h3 id="Tingkat Kematian">Tingkat Kematian</h3>
+      <h3><span class="nav-anchor" id="tingkat-kematian"></span> Tingkat Kematian</h3>
       <img src="img/mortalitas.jpg" alt="Foto">
       <p>Virus Corona yang menyebabkan COVID-19 bisa menyerang siapa saja. Menurut data yang dirilis Gugus Tugas Percepatan Penanganan COVID-19 Republik Indonesia, jumlah kasus terkonfirmasi positif hingga 1 Juli 2020 adalah 56.385 orang dengan jumlah kematian 2.876 orang. Tingkat kematian (case fatality rate) akibat COVID-19 adalah sekitar 5,1%.
 
@@ -50,8 +67,8 @@
     </article>
 
     <!-- MAIN TAMBAHAN -->
-    <section class="tentang-kami" id="tentang-kami">
-      <h2 class="section-title text-center">Tentang Kami</h2>
+    <section class="tentang-kami">
+      <h2 class="section-title text-center"><span class="nav-anchor" id="tentang-kami"></span>Tentang Kami</h2>
       <div class="container">
         <div class="row">
           <!-- Profil 1 -->

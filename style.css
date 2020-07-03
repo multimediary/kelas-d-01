@@ -16,55 +16,176 @@ body {
     height:100%;
     min-height: 100%;
     color: #000000;
-    position:relative;
 }
 
-.main {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    height:100%;	
-}
+/* HEADER STYLES */
 
 header{
-    display: inline;
+    overflow: hidden;
 }
 
-header h1{
-    text-align: center;
-    font-size: 50px;
-}
+/* NAVIGASI STYLE */
 
 header nav{
-    position: sticky;
+    width: 100%;
+    height: 60px;
+    position: fixed;
     top: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+    background-color: #222222;
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+}
+
+header nav .nav-logo {
+    height: 100%;
+}
+
+header nav .nav-logo a{
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    color: #4CB493;
+    margin-left: 10px;
+}
+.nav-img {
+    height: 35px;
+    width: auto;
+}
+
+.nav-anchor {
+    position: absolute;
+    top: -60px;
 }
 
 header nav ul{
-    background-color: lightgreen;
-    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 header nav li{
     list-style: none;
-    display: inline-block;
-    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
     font-size: 20px;
 }
 
+header nav li:hover{
+    background-color: #2e2e2e;
+}
+
 header li a{
+    display: block;
     text-decoration: none;
-    color: black;
-    
+    color: #eee;
+    padding: 18px 20px;
 }
 
 header li a:hover{
-    color: lightskyblue;
+    font-weight: 900;
+    color: #4CB493;
 }
 
-header li a:visited{
-    color: lightcoral;
+/* Welcome Page */
+.welcome {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
 }
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color) url('./img/welcome.jpg') no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+.welcome h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 60px;
+    font-weight: 900;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.welcome h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.btn {
+	display: inline-block;
+    padding: 10px 30px;
+    background-color: #4cb493;;
+    color: #EEE;
+    text-decoration: none;
+	border-radius: 5px;
+	margin-top: 25px;
+    opacity: 0.7;
+    box-shadow: 0 5px 0 #387c67;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+/* Akhir Welcom Page */
 
 main article{
     padding: 0 15px 15px 15px;
@@ -79,8 +200,8 @@ main article p{
 }
 
 main article h3{
+    position: relative;
     font-size: 28px;
-
 }
 
 .menu-icon {
@@ -99,6 +220,7 @@ main article h3{
 }
 
 .section-title {
+    position: relative;
     font-family: 'Comfortaa', cursive;
     font-size: 35px;
     font-weight: 700;
